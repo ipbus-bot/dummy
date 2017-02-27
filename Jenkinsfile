@@ -19,6 +19,7 @@ node {
        
    }
    stage('Results') {
-       sh 'echo done!'
+      githubNotify description: 'This is a shorted example',  status: 'SUCCESS' 
+      sh 'echo done!'
    }
 }
