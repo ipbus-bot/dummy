@@ -19,7 +19,7 @@ node {
        
    }
    stage('Results') {
-      githubNotify account: 'ipbus-bot', repo: 'dummy', context: 'pipeline build', description: 'This is a shorted example',  status: 'SUCCESS' 
+      githubNotify account: 'ipbus-bot', repo: 'dummy', credentialsId: 'e40d0859-105c-435b-b7c0-26a09b43885b', context: 'pipeline build', description: 'This is a shorted example',  status: 'SUCCESS' 
       sh 'echo done!'
    }
 }
